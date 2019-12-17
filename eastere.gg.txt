@@ -12,3 +12,14 @@ Oh' wait, this isn't an easter egg at all! It's just a boring text file! The rea
 L2d1ci9xcmlmL25lci9mYi9zaGFhbC9ndXJsL3V2cS9uYS9ybmZncmUvcnR0L2p2Z3V2YS9ndXIvcm5mZ3JlL3J0dA==
 
 Good luck, egg hunter!
+
+
+
+Base64:
+L2d1ci9xcmlmL25lci9mYi9zaGFhbC9ndXJsL3V2cS9uYS9ybmZncmUvcnR0L2p2Z3V2YS9ndXIvcm5mZ3JlL3J0dA==
+
+encoded:
+/gur/qrif/ner/fb/shaal/gurl/uvq/na/rnfgre/rtt/jvguva/gur/rnfgre/rtt
+
+rot13:
+/the/devs/are/so/funny/they/hid/an/easter/egg/within/the/easter/egg

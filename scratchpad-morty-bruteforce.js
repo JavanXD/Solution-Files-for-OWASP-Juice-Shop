@@ -1,6 +1,6 @@
 // Einfügen erlauben
 
-var host = 'https://f1fe71a1.labs.secure-coding-schulung.de';
+var host = 'https://74199f44.labs.secure-coding-schulung.de';
 
 var passwordList = [
     "snuffles",
